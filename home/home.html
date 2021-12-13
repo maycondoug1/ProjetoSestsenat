@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="/imagex/png" href="../img/logo-16x16.ico">
+    <script src="home.js"></script>
+    <script src="mudar.js"></script>
+    <title>GLMN</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../img/72376.png" alt="Logo">
+        <div id="opt-nav">
+            <a href="../home/home.html">Inicio</a>
+            <a href="http://">Sobre</a>
+        </div>
+    </header>
+    <h1>Bem vindo</h1>
+    <article id="car">
+        <div class="text">
+            <h1>
+                Conheça nosso cartão integração
+            </h1>
+            <p>
+                O cartão Tem Integração é um cartão inteligente com chip, identificado com nome e documento do seu titular. É de uso pessoal e intransferível.
+                O cartão permite fazer integração com outros ônibus, sem precisar pagar duas passagens. Destinado a população, o cartão é recarregável com qualquer valor.
+            </p>
+        </div>
+        <div class="photo">
+            <img src="../img/cARTÃO INTEGRAÇÃO.png" alt="Cartão">
+        </div>
+    </article>
+    <article id="quad">
+        <section id="quad-pg">
+            <h1>Onde vamos hoje?</h1>
+            <div id="floating-panel"></div>
+            <select id="est">
+                <option hidden value="none">Selecione seu estado</option>
+                <option value="BA">Bahia</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <select id="prt" onchange="mudar()">
+                <option hidden value="none">Local de partida</option>
+                <option value="9P7H+J3W Dias d'Ávila, BA">Dias D'ávila</option>
+                <option value="7MXF+MF Centro, Camaçari - BA">Camaçari</option>
+                <option value="2GCM+VM Pernambués, Salvador - BA">Salvador</option>
+                <option value="FP93+6H3 Mata de São João, BA">Mata de são João</option>
+                <option value="6RHC+CR9 Arembepe - Abrantes, Camaçari - BA">Arembepe</option>
+            </select>
+            <select id="cgd" onchange="mudar()">
+                <option hidden value="none">Destino</option>
+                <option value="7MXJ+76 Centro, Camaçari - BA">Camaçari</option>
+                <option value="Centro, Dias d'Ávila - BA, 42850-000">Dias D'ávila</option>
+                <option value="9P7J+RM2 Dias d'Ávila, BA">Nova Dias D'ávila</option>
+                <option value="2GCM+VM Pernambués, Salvador - BA">Salvador</option>
+                <option value="FP93+6H3 Mata de São João, BA">Mata de são João</option>
+                <option value="6RHC+CR9 Arembepe - Abrantes, Camaçari - BA">Arembepe</option>
+            </select>
+            <h1 id="ab"></h1>
+            <p id="aa"></p>
+        </section>
+        <section id="map"></section>
+    </article>
+
+    <article class="func">
+        <h1 id="gg">regras de integração</h1>
+        <div id="urban">
+            <h2>ÔNIBUS URBANO X ÔNIBUS URBANO</h2>
+            <p>A integração acontece entre todas as linhas do Sistema, desde que sejam linhas diferentes. Não é possível a integração de uma linha com ela mesma. As linhas do Serviço Seletivo não estão incluídas na integração.</p>
+            <p>Só é permitida uma integração na sequência da primeira viagem, desde que mantido o mesmo sentido da viagem inicial.</p>
+            <p>A integração pode ser realizada em todos os pontos de parada, terminais e estações de ônibus da cidade.</p>
+            <h2>ÔNIBUS URBANO X METRÔ OU METRÔ X ÔNIBUS URBANO</h2>
+            <p>A segunda viagem não será tarifada, dentro do intervalo de 02 (duas) horas entre as passagens nas catracas.</p>
+            <p>As linhas do Serviço Seletivo não estão incluídas na integração.</p>
+            <p>A integração pode ser feita mediante uso de cartões recarregáveis emitidos</p>
+            <h2>ÔNIBUS URBANO X METRÔ X ÔNIBUS URBANO</h2>
+            <p>Neste tipo de integração é possível efetuar até 3 viagens num intervalo de 2 horas, desde que sejam linhas diferentes e que a utilização do metrô seja entre as viagens de ônibus.</p>
+            <p>As linhas do Serviço Seletivo não estão incluídas na integração.</p>
+            <p>A integração pode ser feita mediante uso de cartões recarregáveis emitidos</p>
+            <h2>ÔNIBUS URBANO X METRÔ X ÔNIBUS METROPOLITANO OU ÔNIBUS METROPOLITANO X METRÔ X ÔNIBUS URBANO</h2>
+            <p>Neste tipo de integração é possível efetuar até 3 viagens num intervalo de 2 horas, desde que a utilização do metrô seja entre as viagens de ônibus (um urbano e um metropolitano)</p>
+            <p>As linhas do Serviço Seletivo não estão incluídas na integração.</p>
+            <p>Os cartões de Meia Passagem Estudantil (MPE) de Salvador não são aceitos nos ônibus Metropolitanos e nem os cartões de Meia Passagem Estudantil (MPE) do Metropasse são aceitos nos ônibus urbanos.</p>
+        </div>                     
+    </article>
+    <footer>
+        GLMN transportes©
+    </footer>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpzyxx6XudJnjuvTErj8XzE-EBIaPKySU&callback=initMap&v=weekly">
+    </script>
+</body>
+</html>
