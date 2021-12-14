@@ -42,7 +42,7 @@ header{
     background: #F76B1C 100%;
 }
 h1{
-    padding-top: 3vh;
+    padding-top: 40px;
     text-align: center;
 }
 #quad{
@@ -94,7 +94,7 @@ select::-ms-expand{
     width: 70vw;
     height: 70vh;
     background-color: rgba(255, 255, 255, 0.808);
-    margin: 90px auto;
+    margin: 40px auto;
     display: flex;
 }
 .text{
@@ -113,12 +113,15 @@ select::-ms-expand{
     width: 100%;
     transform: rotate(-25deg);
 }
+#func{
+    width: 100vw;
+}
 #urban{
     overflow: auto;
     width: 70vw;
     height: 90vh;
     background-color: rgba(255, 255, 255, 0.808);
-    margin: 50px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
 }
@@ -134,12 +137,79 @@ select::-ms-expand{
     height: 100%;
 }
 #gg{
-    font-size: xx-large;
+    font-size: xx-large * 8;
 }
 #aa{
     text-align: center;
     width: 80%;
     margin: auto;
+}
+#detail{
+    width: 80%;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    border: 0px solid black;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);;
+    border-radius: 30px;
+    margin:  10px auto;
+    text-decoration: none;
+    content: none;
+    text-indent: 0.01px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-family: 'Padauk', sans-serif;
+    visibility: hidden;
+}
+#board{
+    background-color: white;
+    width: 70vw;
+    height: 80vh;
+    margin: auto;
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    z-index: 2;
+    display: flex;
+    z-index: -1;
+    visibility: hidden;
+}
+#Fechar{
+    width: 80%;
+    height: 5vh;
+    color: white;
+    top: 90%;
+    left: 10%;
+    position: absolute;
+    border: 0px solid black;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);;
+    border-radius: 30px;
+    margin:  10px auto;
+    text-decoration: none;
+    content: none;
+    text-indent: 0.01px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-family: 'Padauk', sans-serif;
+}
+#sidebar{
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+#linhas{
+    width: 50%;
+    height: 100%;
+}
+#LL{
+    background-image: url(../img/linha\ ferroviaria.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 90%;
 }
 footer{
     height: 10vh;
@@ -152,6 +222,9 @@ footer{
 footer p{
     height: 3vh;
 }
+
+
+
 @media only screen and (max-width: 600px){
     #car{
         width: 90vw;

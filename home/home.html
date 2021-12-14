@@ -18,7 +18,7 @@
         <img id="logo" src="../img/72376.png" alt="Logo">
         <div id="opt-nav">
             <a href="../home/home.html">Inicio</a>
-            <a href="http://">Sobre</a>
+            <a onclick="ind()" id="sobre" href="home.html">Sobre</a>
         </div>
     </header>
     <h1>Bem vindo</h1>
@@ -64,12 +64,20 @@
             </select>
             <h1 id="ab"></h1>
             <p id="aa"></p>
-        </section>
+            <input id="detail" onclick="detail()" type="button" value="Veja mais detalhes!">
+        </section>    
         <section id="map"></section>
     </article>
-
+    <section id="board">
+        <input id="Fechar" type="button" value="Fechar" onclick="fechar()">
+        <div id="sidebar"></div>
+        <div id="linhas">
+            <h1>Linhas incluídas no sistema de integração</h1>
+            <div id="LL"></div>
+        </div>
+    </section>
     <article class="func">
-        <h1 id="gg">regras de integração</h1>
+        <h1 id="gg">Tipos de integração</h1>
         <div id="urban">
             <h2>ÔNIBUS URBANO X ÔNIBUS URBANO</h2>
             <p>A integração acontece entre todas as linhas do Sistema, desde que sejam linhas diferentes. Não é possível a integração de uma linha com ela mesma. As linhas do Serviço Seletivo não estão incluídas na integração.</p>
