@@ -264,4 +264,20 @@ footer p{
     #urban{
         width: 90vw;
     }
+    #board{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        width: 90vw;
+        left: 5vw;
+    }
+    #sidebar{
+        width: 100%;
+    }
+    #linhas{
+        width: 100%;
+    }
+    #Fechar{
+        top: 80vh;
+    }
 }
