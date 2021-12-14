@@ -9,3 +9,4 @@ function initMap() {
   });
 }
 window.alert('Este é um sistema multimodal fictício')
+window.alert('Feito por Guilherme Onomura, Maycon Douglas, Natanael evangelista e Lorena')
