@@ -8,3 +8,4 @@ function initMap() {
     gestureHandling: "None",
   });
 }
+window.alert('Este é um sistema multimodal fictício')
